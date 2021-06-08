@@ -1,0 +1,154 @@
+#welcome-section {
+  text-align: center;
+  margin-bottom: 30em;
+  height: 100%;
+  min-height: 100%;
+  margin-top: 10rem;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(images/mountains.png);
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+.nav-logo {
+  width: 6rem;
+  height: 6rem
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: .5rem 1rem;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-links ul li a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #ff7000;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: center;
+}
+
+.nav-links ul li a:hover {
+  color: #95a5a6;
+}
+
+.nav-links ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.text-box {
+  color: white;
+}
+
+nav .fa-times {
+  display: none;
+}
+
+nav .fa-bars {
+  display: none;
+}
+
+/*
+@media (max-width:700px) {
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    background: orange;
+    transition: 1s
+  }
+  nav .fa-times{
+    display: block;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  nav .fa-bars{
+    display: block;
+    margin: 1rem;
+  }
+  .nav-links{
+    padding: 3px
+  }
+
+} */
+.about-me {
+  /* height: 75vh; */
+  /* width: 100vw; */
+  display: flex
+}
+
+.about-me-title {
+  font-size: 5rem
+}
+
+.about-me-content {
+  text-align: left;
+  width: 50vw;
+  padding: 5%;
+  border: solid black;
+}
+
+.about-me-languages {
+  text-align: center;
+  width: 50vw;
+  padding: 5%;
+  border: solid black;
+}
+
+.about-me-languages-title{
+margin: 1rem;
+}
+
+
+.projects-title{
+  padding: 1rem;
+  text-align: center;
+}
+
+.album{
+  height: 100vh
+}
+
+section div img{
+  height: 10rem;
+  object-fit: fill;
+
+}
