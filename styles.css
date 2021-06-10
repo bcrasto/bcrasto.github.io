@@ -1,7 +1,7 @@
 #welcome-section {
   text-align: center;
-  margin-bottom: 30em;
-  height: 100%;
+  /* margin-bottom: 30em; */
+  height: 100vh;
   min-height: 100%;
   margin-top: 10rem;
 }
@@ -23,7 +23,9 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1%
+  padding: 1%;
+  top: 0px;
+  position:sticky;
 }
 
 .nav-links {
@@ -79,9 +81,9 @@ nav .fa-bars {
   display: none;
 }
 
-/*
 @media (max-width:700px) {
-  .nav-links ul li{
+
+  /* .nav-links ul li{
     display: block;
   }
   .nav-links{
@@ -106,13 +108,20 @@ nav .fa-bars {
   }
   .nav-links{
     padding: 3px
+  } */
+  .about-me {
+    flex-direction: column;
   }
 
-} */
+  .about-me-content, .about-me-languages {
+    width: auto;
+    min-width: 100vw
+  }
+}
+
 .about-me {
-  /* height: 75vh; */
-  /* width: 100vw; */
   display: flex
+  /* margin:auto; */
 }
 
 .about-me-title {
@@ -121,34 +130,33 @@ nav .fa-bars {
 
 .about-me-content {
   text-align: left;
-  width: 50vw;
+  width: 70%;
   padding: 5%;
   border: solid black;
 }
 
 .about-me-languages {
   text-align: center;
-  width: 50vw;
-  padding: 5%;
+  width: 30%;
+  padding: 1% 0% 4% 0%;
   border: solid black;
 }
 
-.about-me-languages-title{
-margin: 1rem;
+.about-me-languages-title {
+  margin: 1rem;
+  padding-bottom: 1rem;
 }
 
-
-.projects-title{
+.projects-title {
   padding: 1rem;
   text-align: center;
 }
 
-.album{
+.album {
   height: 100vh
 }
 
-section div img{
+section div img {
   height: 10rem;
   object-fit: fill;
-
 }
