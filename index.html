@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
 
 <head>
   <title>Brandon Crasto Portfolio Website</title>
@@ -16,6 +16,7 @@
 
 <body>
   <!-- Header -->
+
   <header class="header">
     <nav id="navbar">
       <a href="index.html"><img class="nav-logo" src="images/tea.png"></a>
@@ -43,23 +44,25 @@
     </section>
   </header>
 
+
   <main>
     <!-- AboutMe -->
-    <section id="about-me" class="about-me">
+    <section id="about-me" class="about-me" >
       <!-- Description -->
-      <div class="about-me-content">
+      <div class="about-me-content" class="skrollable skrollable-before" data-500-bottom="opacity:.1;transform:translateX(-500px)" data--100-bottom="opacity:1;transform:translateX(0px)" style="opacity: 0.1; transform: translateX(-50px);">
         <h2 class="about-me-title">Who I Am</h2>
-        <p class="about-me-description">A self-taught full stack developer who is a self-motivated individual, seeking an opportunity to develop professional skills in the technology field. Knowledgeable with JavaScript, currently learning React, and interested in mobile development. </p>
+        <p class="about-me-description">A self-taught full stack developer who is a self-motivated individual, seeking an opportunity to develop professional skills in the technology field. Knowledgeable with JavaScript, currently learning React, and
+          interested in mobile development. </p>
         <p>TWO</p>
       </div>
       <!-- What i know -->
-      <div class="about-me-languages">
-          <h2 class="about-me-languages-title">Experience With</h2>
-            <img src="images/HTML.png" alt="HTML">
-            <img src="images/CSS.png" alt="CSS">
-            <img src="images/JS.png" alt="Javascript">
-            <img src="images/React.png" alt="React">
-            <!-- <img src="images/Bootstrap.png" alt="Bootstrap"> -->
+      <div class="about-me-languages" class="skrollable skrollable-before" data-500-bottom="opacity:.1;transform:translateX(+500px)" data--100-bottom="opacity:1;transform:translateX(0px)" style="opacity: 0.1; transform: translateX(-50px);">
+        <h2 class="about-me-languages-title">Experience With</h2>
+        <img src="images/HTML.png" alt="HTML">
+        <img src="images/CSS.png" alt="CSS">
+        <img src="images/JS.png" alt="Javascript">
+        <img src="images/React.png" alt="React">
+        <!-- <img src="images/Bootstrap.png" alt="Bootstrap"> -->
       </div>
     </section>
 
@@ -69,7 +72,7 @@
 
 
     <!-- Projects -->
-    <div id="projects" class="album py-5 bg-light">
+    <div id="projects" class="album py-5 bg-light" >
       <div class="container">
 
         <h1 class="projects-title">Projects</h1>
@@ -89,7 +92,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" onclick="window.open('https://github.com/bcrasto/SnowDepthProject','_blank')" class="btn btn-sm btn-outline-secondary">View</button>
-  <a href="https://github.com/bcrasto/SnowDepthProject"></a>
+                    <a href="https://github.com/bcrasto/SnowDepthProject"></a>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                   </div>
                 </div>
@@ -143,7 +146,7 @@
 
   </main>
 
-<!-- <script>
+  <!-- <script>
   var navLinks = document.getElementbyId("navLinks");
 
   function showMenu(){
@@ -154,6 +157,10 @@
   }
 
 </script> -->
+  <script type="text/javascript" src="skrollr.min.js"></script>
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
 
 </body>
 
