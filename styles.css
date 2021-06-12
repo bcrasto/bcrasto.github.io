@@ -140,14 +140,15 @@ nav .fa-bars {
 .about-me-content {
   text-align: left;
   width: 70%;
-  padding: 5%;
+  padding: 10%
   /* border: solid black; */
 }
 
 .about-me-languages {
   text-align: center;
   width: 30%;
-  padding: 1% 0% 4% 0%;
+  padding: 5%;
+  margin-right: 5%;
   /* border: solid black; */
 }
 
