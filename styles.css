@@ -84,12 +84,14 @@ nav {
 nav .fa-times {
   display: none;
 }
-
+/* .row {
+    margin-right: 15px;
+} */
 nav .fa-bars {
   display: none;
 }
 
-@media (max-width:700px) {
+@media screen and (max-width:700px) {
 
   /* .nav-links ul li{
     display: block;
@@ -125,7 +127,10 @@ nav .fa-bars {
     width: auto;
     min-width: 100vw
   }
+
 }
+
+
 
 .about-me {
   display: flex
@@ -163,7 +168,7 @@ nav .fa-bars {
 }
 
 .album {
-  height: 100vh
+
 }
 
 section div img {
