@@ -11,14 +11,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100;1,500&display=swap" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/js/all.js"> -->
 </head>
 
-<body id="skrollr-body">
+<body id="skrollr-body" >
   <!-- Header -->
 
   <header id="Home" class="header">
-    <nav id="navbar">
+    <nav id="navbar" class="navbar">
       <a href="index.html"><img class="nav-logo" src="images/tea.png"></a>
       <div class="nav-links" id=navLinks>
         <!-- <i class="fa fa-times" onclick="hideMenu()" ></i> -->
@@ -27,7 +28,7 @@
           <li><a href="#about-me">ABOUT</a></li>
           <li><a href="#languages">SKILLS</a></li>
           <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="CONTACT">CONTACT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
       <!-- <i class="fa fa-bars" onclick="showMenu()" ></i> -->
@@ -52,10 +53,14 @@
       <div class="about-me-content" class="skrollable skrollable-before" data-500-bottom="opacity:.1;transform:translateX(-500px)" data--100-bottom="opacity:1;transform:translateX(0px)" style="opacity: 0.1; transform: translateX(-50px);">
         <h2 class="about-me-title">Who I Am</h2>
         <p class="about-me-description">
-          A self-taught full stack developer who is a self-motivated individual, seeking an opportunity to develop professional skills in the technology field. Knowledgeable with the core of Front-End development: HTML, CSS, and, JavaScript.
+          A self-taught full stack developer who is a self-motivated individual, seeking an opportunity to develop professional skills in the technology field.
+          Knowledgeable with the core of Front-End development: HTML, CSS, and, JavaScript.
         </p>
         <p>
           Currently learning React and SASS to improve my front-end skills.
+        </p>
+        <p>
+
         </p>
       </div>
       <!-- What i know -->
@@ -92,7 +97,8 @@
               </svg> -->
 
               <div class="card-body ">
-                <p class="card-text">This is my first coding project that taught me how to think like a programmer. The project lasted two years and it involved writing an algorithm that analyzes images taken from trail cameras to get snow depth
+                <p class="card-text">
+                  This is my first coding project that taught me how to think like a programmer. The project lasted two years and it involved writing an algorithm that analyzes images taken from trail cameras to get snow depth
                   data. The results were then presented at the NCUR research conference.
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
@@ -116,7 +122,8 @@
 
 
               <div class="card-body">
-                <p class="card-text">A product page made for the famous writing device. The Pencil. The website was made with HTML and CSS along with the Bootstrap framework. This project taught me a lot about the fundamentals of front-end development.</p>
+                <p class="card-text">A product page made for the famous writing device. The Pencil. The website was made with HTML and CSS along with the Bootstrap framework. This project taught me a lot about the fundamentals of front-end
+                  development.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" target="_blank" onclick="window.open('https://kind-shaw-f883d7.netlify.app/','_blank')" class="btn btn-sm btn-outline-secondary">Test Site</button>
@@ -139,7 +146,8 @@
 
               <div class="card-body">
                 <p class="card-text">
-                  I made a Newsletter that sends a welcome email. This was mainly a backend project. I learned how to connect to the MailChimp API and hosted the server in Heroku. Also learned how to hide API keys the hard way after accidently posting them online.
+                  I made a Newsletter that sends a welcome email. This was mainly a backend project. I learned how to connect to the MailChimp API and hosted the server in Heroku. I also learned how to hide API keys the hard way after accidently
+                  posting them online.
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -153,7 +161,7 @@
           <!-- Card 4 -->
           <div class="col project-tile" class="skrollable skrollable-before" data-500-bottom="opacity:.1;transform:translateY(100px)" data--100-bottom="opacity:1;transform:translateY(0px)" style="opacity: 0.1; transform: translateY(0px);">
             <div class="card shadow-sm">
-<img src="images/portfolio.jpeg" alt="">
+              <img src="images/portfolio.jpeg" alt="">
 
               <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Portfolio Page</title>
@@ -162,7 +170,7 @@
 
               <div class="card-body">
                 <p class="card-text">
-                  My latest project is this portfolio page. I learned a how to add some style to my webpages to make them more appealing. Also I made the page mobile friendly.
+                  My latest project is this portfolio page. I learned how to add some style to my webpages to make them more appealing. Also, I made the webpage mobile friendly.
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -219,9 +227,29 @@
       </div>
     </div>
     <!-- End of projects -->
+    <div id="contact" class="row contact">
+      <div class="innerDiv">
+        <h2 id="contactHead" class="text-center">Contact</h2>
+        <hr>
+        <div class="col-xs-12 col-md-3 contactbutton">
+          <a class="btn " href="mailto:brancrasto@yahoo.com" target="_top">
+            <i class="bi bi-envelope-fill"></i> Email
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-3 contactbutton">
+          <a class="btn " href="https://www.linkedin.com/in/brandon-crasto-aa6225211/" target="_blank">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-3 contactbutton">
+          <a class="btn " href="https://github.com/bcrasto" target="_blank">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
 
-
-    <footer id="CONTACT" class="pt-5 my-5 text-muted border-top">
+    <footer class="pt-5 my-5 text-muted border-top">
       Created by Brandon Crasto · © 2021
 
     </footer>
