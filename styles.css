@@ -21,7 +21,7 @@
 .nav-logo {
   width: 3rem;
   height: 3rem;
-  margin-left: 1rem
+  margin-left: 2rem
 }
 
 nav {
@@ -29,7 +29,7 @@ nav {
   justify-content: space-between;
   padding-top: 1rem;
   top: 0px;
-  position:sticky;
+  position:static;
   z-index: 3;
   background-color: black;
   width: 100vw;
@@ -167,9 +167,6 @@ nav .fa-bars {
   text-align: center;
 }
 
-.album {
-
-}
 
 section div img {
   height: 10rem;
