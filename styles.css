@@ -174,4 +174,9 @@ nav .fa-bars {
 section div img {
   height: 10rem;
   object-fit: fill;
+  padding: 1rem;
+}
+
+footer{
+  text-align: center;
 }
